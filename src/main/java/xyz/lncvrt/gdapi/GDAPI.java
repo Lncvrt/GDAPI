@@ -37,7 +37,6 @@ public class GDAPI {
 
         try (Response response = httpClient.newCall(request).execute()) {
             String body = response.body().string();
-            System.out.println(body);
             switch (body) {
                 case "-1":
                     throw new UnknownErrorException();
