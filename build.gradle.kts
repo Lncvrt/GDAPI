@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("com.gradleup.shadow") version "9.0.0-beta13"
+    id("com.gradleup.shadow") version "9.0.0-beta17"
     `maven-publish`
 }
 
@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.14")
+    implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.17")
 }
 
 val sourcesJar = tasks.register<Jar>("sourcesJar") {
