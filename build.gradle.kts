@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.17")
+    implementation("com.squareup.okhttp3:okhttp:5.1.0")
 }
 
 val sourcesJar = tasks.register<Jar>("sourcesJar") {
