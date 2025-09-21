@@ -16,12 +16,7 @@ import java.util.Base64;
 import java.util.List;
 
 @SuppressWarnings("unused")
-public class Comments {
-    private final GDAPI gdapi;
-
-    public Comments(GDAPI gdapi) {
-        this.gdapi = gdapi;
-    }
+public record Comments(GDAPI gdapi) {
 
     public int uploadLevelComment(String comment, int levelID, int completionPercent) throws UnknownErrorException, InvalidResponseException, RequestFailedException {
         String encodedComment = Base64.getEncoder().encodeToString(comment.getBytes(StandardCharsets.UTF_8));
